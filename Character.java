@@ -9,6 +9,19 @@ public abstract class Character {
     protected int _str;
     protected int _def;
     protected double _attack;
+    protected String _name;
+    protected int _altdef;
+    protected double _altattack;
+
+    public Character ( String name ) {
+	_name = name;
+	_hp = 125;
+	_str = 40;
+	_def = 100;
+	_altdef = _def/5;
+	_attack = 0.4;
+	_altattack = _attack*10;
+    }
     
     public boolean isAlive() {
 	return _hp > 0;
@@ -26,12 +39,9 @@ public abstract class Character {
 
     public int attack(Character opponent) {
 	int damage = (int)(_str*_attack) - opponent.getDefense();
-	
 	if (damage < 0)
 	    damage = 0;
-
-	opponent.lowerHP(damage);
-	
+	oponent.lowerHP(damage);
 	return damage;
     }
 

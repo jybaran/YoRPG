@@ -3,12 +3,11 @@
 // HW25
 // 2013-11-14
 
-public class Warrior extends Character {
-
-    private String _name;
-    private int _altdef;
-    private double _altattack;
-    
+public class Kitten extends Character {
+    public Kitten(String name){
+	this(name);
+	hp*=9;
+    }
     public String getName() {
 	return _name;
     }
@@ -19,10 +18,10 @@ public class Warrior extends Character {
 
     public void specialize() {
 	if (_attack < _altattack) {
-	    double tempA = _attack;
+	    double tempA = _attack;//Set attack
 	    _attack = _altattack;
 	    _altattack = tempA;
-	    int tempD = _def;
+	    int tempD = _def;//set defense
 	    _def = _altdef;
 	    _altdef = tempD;
 	}
@@ -32,10 +31,10 @@ public class Warrior extends Character {
 
     public void normalize() {
 	if (_attack > _altattack) {
-	    double tempA = _attack;
+	    double tempA = _attack;//normalize attack
 	    _attack = _altattack;
 	    _altattack = tempA;
-	    int tempD = _def;
+	    int tempD = _def;//normalize defense 
 	    _def = _altdef;
 	    _altdef = tempD;
 	}
@@ -44,9 +43,9 @@ public class Warrior extends Character {
     }
 
     public static String about() {
-	String retStr = "Standard human (probably). Most are rather fond of swords ";
-	retStr += "and adventure.";
-	return retStr;
+	return ("A smaller and more adorable Cat. Fond of milk, balls of yarn, cuddling, yawning cutely,"+ 
+			 "and clawing out the eyes of their opponents. Ferocious attacker, not great defenders,"+
+		" but they do have seem to have strangely long lives... almost as though there are 9 of them...");
     }
 
 }
