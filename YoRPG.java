@@ -65,8 +65,11 @@ public class YoRPG {
 	catch ( IOException e ) { }
 
 	s = "Choose your class: \n";
-	s+= "\t1: Warrior (" + Warrior.about() + ")";
-	s+= "\t2: Mage (" + Mage.about() + ")";
+	s+= "\t1: Warrior - " + Warrior.about() + "\n";
+	s+= "\t2: Mage - " + Mage.about() + "\n";
+	s+= "\t3: Rogue - " + Rogue.about() + "\n";
+	s+= "\t4: Knight - " + Knight.about() + "\n";
+	s+= "\t5: Kitten - " + Kitten.about() + "\n";
 	System.out.print(s);
 
 	try {
