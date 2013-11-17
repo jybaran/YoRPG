@@ -56,26 +56,26 @@ public class Knight extends Character {
 
     public String ascii() {
 	String retStr = "";
-	retStr += "/n          _,.";
-        retStr += "/n        ,` -.)";
-        retStr += "/n       ( _/-\\-._";
-        retStr += "/n      /,|`--._,-^|            ,";
-        retStr += "/n      \_| |`-._/||          ,'|";
-        retStr += "/n        |  `-, / |         /  /";
-        retStr += "/n        |     || |        /  /";
-        retStr += "/n         `r-._||/   __   /  /  ";
-        retStr += "/n     __,-<_     )`-/  `./  /  ";
-        retStr += "/n    '  \   `---'   \   /  /    ";
-        retStr += "/n        |           |./  /       ";
-        retStr += "/n        /            /  /       ";
-        retStr += "/n    \_/' \         |/  /       ";
-        retStr += "/n     |    |   _,^-'/  /       ";
-        retStr += "/n     |    , ``  (\/  /_";
-        retStr += "/n      \,.->._    \X-=/^";
-        retStr += "/n      (  /   `-._//^`  ";
- 	retStr += "/n       `Y-.____(__}";
- 	retStr += "/n        |     {__)";
-	retStr += "/n             ()";
+	retStr += "\n          _,.";
+        retStr += "\n        ,` -.)";
+        retStr += "\n       ( _/-\\\\-._";
+        retStr += "\n      /,|`--._,-^|            ,";
+        retStr += "\n      \\_| |`-._/||          ,'|";
+        retStr += "\n        |  `-, / |         /  /";
+        retStr += "\n        |     || |        /  /";
+        retStr += "\n         `r-._||/   __   /  /  ";
+        retStr += "\n     __,-<_     )`-/  `./  /  ";
+        retStr += "\n    '  \\   `---'   \\   /  /    ";
+        retStr += "\n        |           |./  /       ";
+        retStr += "\n        /            /  /       ";
+        retStr += "\n    \\_/' \\         |/  /       ";
+        retStr += "\n     |    |   _,^-'/  /       ";
+        retStr += "\n     |    , ``  (\\/  /_";
+        retStr += "\n      \\,.->._    \\X-=/^";
+        retStr += "\n      (  /   `-._//^`  ";
+ 	retStr += "\n       `Y-.____(__}";
+ 	retStr += "\n        |     {__)";
+	retStr += "\n             ()";
 	return retStr;
     }
 

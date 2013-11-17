@@ -145,6 +145,13 @@ public class YoRPG {
 		    pat.specialize();
 		else
 		    pat.normalize();
+		try {
+		    System.out.println( "Do you want to use a weapon? Keep in mind you can only use each one of these once!" );
+		    System.out.println( "\t1:knife.\n\t2: potion \n \t3: BOMB!" );
+		    i = Integer.parseInt( in.readLine() );
+		}
+		catch ( IOException e ) { }
+		pat.convertWeapon(i);
 
 		d1 = pat.attack( smaug );
 		d2 = smaug.attack( pat );
