@@ -56,7 +56,7 @@ public class Mage extends Character {
         retStr += "/n      /^\";    
         retStr += "/n       /\    V";
         retStr += "/n      /__\   I  ";   
-        retStr += "/n     //..\\  I ";"    
+        retStr += "/n     //..\\  I ";   
         retStr += "/n     \].`[/  I";
         retStr += "/n    /l\/j\  (] ";  
         retStr += "/n    /. ~~ ,\/I  ";     
