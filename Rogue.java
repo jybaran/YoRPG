@@ -20,12 +20,12 @@ public class Rogue extends Character {
         return super.attack(opponent);
     }
     
-    public void  gainHP () {
+   /* public void  gainHP () {
         int moves = YoRPG.getMoveCounter();
         if (moves%3 == 0) {
             _HP = (125 - _HP) / 4;
         }
-    }
+    }*/
     public void specialize() {
 	if (_attack < _altattack) {
 	    double tempA = _attack;
