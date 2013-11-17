@@ -1,19 +1,15 @@
-// JENNY BARAN
+// JENNY BARAN, MARIA VASILKIN, MIRANDA CHAIKEN
 // pd 8
 // HW26
 // 2013-11-15
 
 public class Warrior extends Character {
-
-    private String _name;
-    private int _altdef;
-    private double _altattack;
     
     public String getName() {
 	return _name;
     }
 
-    public int attack(Monster opponent) {
+    public int attack(Character opponent) {
 	return super.attack(opponent);
     }
 
@@ -48,5 +44,11 @@ public class Warrior extends Character {
 	retStr += "and adventure.";
 	return retStr;
     }
+
+    public String ascii() {
+	String retStr = "";
+	return retStr;
+    }
+
 
 }

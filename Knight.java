@@ -1,21 +1,15 @@
-// JENNY BARAN
+// JENNY BARAN, MARIA VASILKIN, MIRANDA CHAIKEN
 // pd 8
 // HW26
 // 2013-11-15
 
 public class Knight extends Character {
 
-    private String _name;
-    private int _altdef;
-    private double _altattack;
-
     public Knight( String name ) {
-	_name = name;
+	super(name);
 	_hp = 100;
 	_str = 50;
-	_def = 100;
 	_altdef = _def*2;
-	_attack = 0.4;
 	_altattack = _attack*(2/3);
     }
     
@@ -23,7 +17,7 @@ public class Knight extends Character {
 	return _name;
     }
 
-    public int attack(Monster opponent) {
+    public int attack(Character opponent) {
 	return super.attack(opponent);
     }
 
@@ -57,6 +51,11 @@ public class Knight extends Character {
 	String retStr = "Very brave and loyal. Kind to all (except dragons). ";
 	retStr += "Stronger than a standard warrior, but more easily killed (all that time in a ";
 	retStr += "glorifed tin can isn't great for the health)."
+	return retStr;
+    }
+
+    public String ascii() {
+	String retStr = "";
 	return retStr;
     }
 

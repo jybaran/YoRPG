@@ -1,21 +1,13 @@
-// JENNY BARAN
+// JENNY BARAN, MARIA VASILKIN, MIRANDA CHAIKEN
 // pd 8
-// HW25
-// 2013-11-14
+// HW26
+// 2013-11-15
 
 public class Mage extends Character {
 
-    private String _name;
-    private int _altdef;
-    private double _altattack;
-
     public Mage( String name ) {
-	_name = name;
-	_hp = 125;
+	super(name);
 	_str = 30;
-	_def = 100;
-	_altdef = _def/2;
-	_attack = 0.4;
 	_altattack = _attack*3;
     }
     
@@ -23,7 +15,7 @@ public class Mage extends Character {
 	return _name;
     }
 
-    public int attack(Monster opponent) {
+    public int attack(Character opponent) {
 	return super.attack(opponent);
     }
 
@@ -56,6 +48,11 @@ public class Mage extends Character {
     public static String about() {
 	String retStr = "Bit more magicky than your average human. Not as strong as ";
 	retStr += "a Warrior, but has a more powerful special attack.";
+	return retStr;
+    }
+
+    public String ascii() {
+	String retStr = "";
 	return retStr;
     }
 

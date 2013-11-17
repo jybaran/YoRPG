@@ -1,7 +1,7 @@
-// JENNY BARAN
+// JENNY BARAN, MARIA VASILKIN, MIRANDA CHAIKEN
 // pd 8
-// HW25
-// 2013-11-14
+// HW26
+// 2013-11-15
 
 public abstract class Character {
 
@@ -13,14 +13,14 @@ public abstract class Character {
     protected int _altdef;
     protected double _altattack;
 
-    public Character ( String name ) {
+    public Character( String name ) {
 	_name = name;
 	_hp = 125;
 	_str = 40;
 	_def = 100;
-	_altdef = _def/5;
+	_altdef = _def/2;
 	_attack = 0.4;
-	_altattack = _attack*10;
+	_altattack = _attack*2;
     }
     
     public boolean isAlive() {
@@ -41,7 +41,7 @@ public abstract class Character {
 	int damage = (int)(_str*_attack) - opponent.getDefense();
 	if (damage < 0)
 	    damage = 0;
-	oponent.lowerHP(damage);
+	opponent.lowerHP(damage);
 	return damage;
     }
 
@@ -53,5 +53,8 @@ public abstract class Character {
 	String retStr = "";
 	return retStr;
     }
+
+    public abstract String ascii();
+	
 
 }

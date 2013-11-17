@@ -1,12 +1,11 @@
-// JENNY BARAN
+// JENNY BARAN, MARIA VASILKIN, MIRANDA CHAIKEN
 // pd 8
-// HW25
-// 2013-11-14
+// HW26
+// 2013-11-15
 
 public class Monster extends Character {
 
     public Monster() {
-
 	_hp = 150;
 	_str = 20 + (int)( Math.random() * 45 );
 	_def = 20;
@@ -18,7 +17,7 @@ public class Monster extends Character {
 	return "";
     }
     
-    public int attack(Warrior opponent) {
+    public int attack(Character opponent) {
 	return super.attack(opponent);
     }
 
@@ -31,5 +30,17 @@ public class Monster extends Character {
 	retStr += "bite your head off. That's really all that matters though, right?";
 	return retStr;
     }
+
+    public String ascii() {
+	String retStr = "   '     '    \n" +
+	    "   /(   )\\   \n"+
+	    "  |   U   |  \n"+
+	    "   ) o o (   \n"+
+	    "  |       |    \n"+
+	    "   \\  W  /    \n"+
+	    "     \\V/       \n";
+	return retStr;
+    }
+
 
 }
