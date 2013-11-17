@@ -7,7 +7,7 @@ public class Rogue extends Character {
 
     public Rogue( String name ) {
 	super(name);
-        _str = 75;
+        _str = 30;
         _def = 125;
         _attack = 0.3;
     }
@@ -20,6 +20,12 @@ public class Rogue extends Character {
         return super.attack(opponent);
     }
     
+    public void  gainHP () {
+        int moves = YoRPG.getMoveCount();
+        if (moves%3 == 0) {
+            _HP = (125 - _HP) / 4;
+        }
+    }
     public void specialize() {
 	if (_attack < _altattack) {
 	    double tempA = _attack;
