@@ -53,6 +53,20 @@ public class Mage extends Character {
 
     public String ascii() {
 	String retStr = "";
+        retStr += "/n      /^\";    
+        retStr += "/n       /\    V";
+        retStr += "/n      /__\   I  ";   
+        retStr += "/n     //..\\  I ";"    
+        retStr += "/n     \].`[/  I";
+        retStr += "/n    /l\/j\  (] ";  
+        retStr += "/n    /. ~~ ,\/I  ";     
+        retStr += "/n    \\L__j^\/I  ";    
+        retStr += "/n      \/--v} I  ";   
+        retStr += "/n      |    | I  "; 
+        retStr += "/n      |    | I ";
+        retStr += "/n      |    l I  ";
+        retStr += "/n    _/j  L l\_!  ";
+        retStr += "/n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ";
 	return retStr;
     }
 
