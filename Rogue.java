@@ -21,7 +21,7 @@ public class Rogue extends Character {
     }
     
     public void  gainHP () {
-        int moves = YoRPG.getMoveCount();
+        int moves = YoRPG.getMoveCounter();
         if (moves%3 == 0) {
             _HP = (125 - _HP) / 4;
         }
