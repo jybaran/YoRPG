@@ -35,7 +35,10 @@ public class YoRPG {
 	newGame();
     }
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+    // Trying something for Rogue
+    public int getMoveCounter (){
+    	return moveCounter;
+    }
 
     // ~~~~~~~~~~~~~~ METHODS ~~~~~~~~~~~~~~~~~~~
 
