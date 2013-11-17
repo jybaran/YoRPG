@@ -37,7 +37,7 @@ public class YoRPG {
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // Trying something for Rogue
     public int getMoveCounter (){
-    	return moveCounter;
+    	return moveCount;
     }
 
     // ~~~~~~~~~~~~~~ METHODS ~~~~~~~~~~~~~~~~~~~
