@@ -68,16 +68,16 @@ public abstract class Character {
 	}
 	else{
 	    success= "You already used that weapon!";
-		}
-	return success; 
 	}
+	return success; 
+    }
     public String weaponConvert(int x){
 	if (x==1)
 	    return this.weaponize(_knife);
 	if (x==2)
 	    return this.weaponize(_potion);
 	if (x==3)
-	   return this.weaponize(_bomb);
+	    return this.weaponize(_bomb);
 	else
 	    return "Please try and use a weapon you actually HAVE";
 

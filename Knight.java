@@ -50,7 +50,7 @@ public class Knight extends Character {
     public static String about() {
 	String retStr = "Very brave and loyal. Kind to all (except dragons). ";
 	retStr += "Stronger than a standard warrior, but more easily killed (all that time in a ";
-	retStr += "glorifed tin can isn't great for the health)."
+	retStr += "glorifed tin can isn't great for the health).";
 	return retStr;
     }
 
