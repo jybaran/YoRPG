@@ -53,7 +53,22 @@ public class Kitten extends Character {
 
     public String ascii() {
 	String retStr = "";
-	return retStr;
+	retStr += "/n (`.";
+        retStr += "/n  ) )";
+        retStr += "/n ( (";
+        retStr += "/n  \ \";
+        retStr += "/n   \ \";
+        retStr += "/n .-'  `-.";
+        retStr += "/n/        `.";
+        retStr += "/n(      )    `-._ ,   _";
+        retStr += "/n)   ,'         (.\--'(";
+        retStr += "/n\  (         ) /      \";
+        retStr += "/n \  \_(     / (    <6 (6";
+        retStr += "/n \_)))\   (   `._  .:Y)__";
+        retStr += "/n '''  \   `-._.'`---^_)))";
+        retStr += "/n        `-._ )))       ```";
+        retStr += "/n             ```";
+        return retStr;
     }
 
 
