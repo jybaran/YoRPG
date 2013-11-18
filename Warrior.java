@@ -55,10 +55,10 @@ public class Warrior extends Character {
 
     public String ascii() {
 	String retStr = "";
-	retStr +="/n  O"; 
-	retStr +="/n \|/";
-	retStr +="/n  |";
-	retStr +="/n / \";
+	retStr +="\n  O"; 
+	retStr +="\n \|/";
+	retStr +="\n  |";
+	retStr +="\n / \";
 	return retStr;
     }
 
