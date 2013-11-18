@@ -6,7 +6,10 @@
 public class Rogue extends Character {
 
     public Rogue( String name ) {
-	super(name);
+	_name = name;
+	_hp = 125;
+	_altdef = _def/2;
+	_altattack = _attack*2;
         _str = 30;
         _def = 125;
         _attack = 0.3;

@@ -6,7 +6,11 @@
 public class Mage extends Character {
 
     public Mage( String name ) {
-	super(name);
+	_name = name;
+	_hp = 125;
+	_def = 100;
+	_altdef = _def/2;
+	_attack = 0.4;
 	_str = 30;
 	_altattack = _attack*3;
     }

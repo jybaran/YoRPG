@@ -6,7 +6,12 @@
 public class Kitten extends Character {
    
     public Kitten(String name){
-	super(name);
+	_name = name;
+	_hp = 125;
+	_str = 40;
+	_def = 100;
+	_altdef = _def/2;
+	_attack = 0.4;
 	_hp*=9;
 	_altattack = _attack*10;
     }

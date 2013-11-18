@@ -131,7 +131,7 @@ public class YoRPG {
 	    System.out.println( "Lo, yonder monster approacheth!" );
 
 	    smaug = new Monster();
-
+	    System.out.println(smaug.ascii());
 	    while( smaug.isAlive() && pat.isAlive() ) {
 
 		// Give user the option of using a special attack:
@@ -148,23 +148,23 @@ public class YoRPG {
 		    pat.specialize();
 		else
 		    pat.normalize();
-		/*	try {
+		try {
 		    System.out.println( "Do you want to use a weapon? Keep in mind you can only use each one of these once!" );
 		    System.out.println( "\t1:knife.\n\t2: potion \n \t3: BOMB!\n \t4 nah I'm good" );
 		    i = Integer.parseInt( in.readLine() );
 		}
 		catch ( IOException e ) { }
 		if (!(i==4))
-		System.out.println(pat.convertWeapon);*/
+		    System.out.println(pat.weaponConvert(i));
 
 		d1 = pat.attack( smaug );
 		d2 = smaug.attack( pat );
 
 		System.out.println( pat.getName() + " dealt " + d1 +
-				    " points of damage.");
+				    " points of damage."+pat.ascii());
 
 		System.out.println( "Ye Olde Monster hit back for " + d2 +
-				    " points of damage.");
+				    " points of damage.\n"+smaug.ascii());
 	    }//end while
 
 	    //option 1: you & the monster perish

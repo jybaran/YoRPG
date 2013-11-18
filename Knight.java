@@ -6,7 +6,9 @@
 public class Knight extends Character {
 
     public Knight( String name ) {
-	super(name);
+	_name = name;
+	_def = 100;
+	_attack = 0.4;
 	_hp = 100;
 	_str = 50;
 	_altdef = _def*2;

@@ -4,7 +4,15 @@
 // 2013-11-15
 
 public class Warrior extends Character {
-    
+       public Warrior( String name ) {
+	_name = name;
+	_hp = 125;
+	_str = 40;
+	_def = 100;
+	_altdef = _def/2;
+	_attack = 0.4;
+	_altattack = _attack*2;
+    }
     public String getName() {
 	return _name;
     }

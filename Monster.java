@@ -5,7 +5,7 @@
 
 public class Monster extends Character {
 
-    public Monster() {
+    public Monster(){
 	_hp = 150;
 	_str = 20 + (int)( Math.random() * 45 );
 	_def = 20;
@@ -32,13 +32,19 @@ public class Monster extends Character {
     }
 
     public String ascii() {
-	String retStr = "   '     '    \n" +
-	    "   /(   )\\   \n"+
-	    "  |   U   |  \n"+
-	    "   ) o o (   \n"+
-	    "  |       |    \n"+
-	    "   \\  W  /    \n"+
-	    "     \\V/       \n";
+	String retStr = (
+"              ,      ,   "+
+"\n            /(.----.)\\"+
+"\n        |\\  \\/      \\/  /|"+
+"\n        | \\ / =.  .= \\ / |"+
+"\n        \\( \\   o\\/o   / )/"+
+"\n         \\_   -/  \\-   _/"+
+"\n           /   \\__/   \\"+
+"\n           \\ \\__/\\__/ /"+
+"\n         ___\\ \\|--|/ /___"+
+"\n       /`    \\      /    `\\"+
+"\n      /        ----        \\");
+//credit to http://www.geocities.com/spunk1111/haloween.htm#demon as we were too lazy to make these ourselves
 	return retStr;
     }
 
