@@ -80,5 +80,5 @@ public class Knight extends Character {
 	retStr += "\n             ()";
 	return retStr;
     }
-
+	//ascii.co.uk/art/knights‎ served us well
 }
