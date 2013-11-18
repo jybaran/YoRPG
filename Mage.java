@@ -73,5 +73,6 @@ public class Mage extends Character {
         retStr += "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ";
 	return retStr;
     }
+    //ASCII from ascii.co.uk/art/magician‎
 
 }
