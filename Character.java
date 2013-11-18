@@ -15,16 +15,6 @@ public abstract class Character {
     protected boolean _knife=true;
     protected boolean _potion=true;
     protected boolean _bomb=true;
-
-    public Character( String name ) {
-	_name = name;
-	_hp = 125;
-	_str = 40;
-	_def = 100;
-	_altdef = _def/2;
-	_attack = 0.4;
-	_altattack = _attack*2;
-    }
     
     public boolean isAlive() {
 	return _hp > 0;
@@ -63,7 +53,6 @@ public abstract class Character {
 	String success="";
 	if (weapon==true){
 	    _hp+=5;
-	    weapon=false; 
 	    success= "You are weaponized and gained some hP back";
 	}
 	else{
@@ -72,14 +61,19 @@ public abstract class Character {
 	return success; 
     }
     public String weaponConvert(int x){
-	if (x==1)
-	    return this.weaponize(_knife);
-	if (x==2)
-	    return this.weaponize(_potion);
-	if (x==3)
-	    return this.weaponize(_bomb);
+	String c="";
+	if (x==1){
+	    c=this.weaponize(_knife);
+	    _knife=false;}
+	else if (x==2){
+	    c=this.weaponize(_potion);
+	    _potion=false;}
+	else if (x==3){
+	   c=this.weaponize(_bomb);
+	   _bomb=false;}
 	else
-	    return "Please try and use a weapon you actually HAVE";
+	    c="Please try and use a weapon you actually HAVE";
+	return c;
 
     }
 
