@@ -62,8 +62,28 @@ public class Rogue extends Character {
     }
 
     public String ascii() {
-	String retStr = "";
+	String retStr = (
+            "  _,._  "+    
+            " /_ _\\  "+   
+            " |'L'| |   "+ 
+            " | -,| L    "+
+         " ,-'\"/,'`.    "+
+      "" ,'   `,,. `.  "+
+  " ____,' , ,;' \| |  "+
+  "(|\    _/|/'   _| |  "+
+  " /,-''  | >-'' _,\\ "+
+   "'      ==\ ,-'  ,' "+
+    "      |  V \ ,|   "+
+     "     |    |` |   "+
+      "    |    |   \  "+
+       "   |    \    \ "+
+        "  |     |    \"+
+         " |      \_,-'"+
+          "|___,,--")_\"+
+           " |_|   ccc/"+
+          " ccc/       ");
 	return retStr;
     }
+    //http://ascii.co.uk/art/wizard
 
 }
